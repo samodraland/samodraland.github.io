@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Disability Reporting Application | Shindu Samodra</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Profile and portfolio of Shindu Samodra" />
+    <meta name="keywords"
+        content="Disability Handling Information System, social agency, shindu samodra, samodraland, senior software engineer, senior software developer, frontend developer, frontend engineer, backend developer, backend engineer, fullstack developer" />
+    <meta name="author" content="Shindu Samodra" />
+
+    <meta property="og:title" content="Portfolio of Shindu Samodra" />
+    <meta property="og:image" content="https://samodraland.github.io/images/about.jpg" />
+    <meta property="og:url" content="https://samodraland.github.io" />
+    <meta property="og:site_name" content="Portfolio" />
+    <meta property="og:description" content="Portfolio of Shindu Samodra" />
+    <meta name="twitter:title" content="Portfolio of Shindu Samodra" />
+    <meta name="twitter:image" content="https://samodraland.github.io/images/about.jpg" />
+    <meta name="twitter:url" content="https://samodraland.github.io" />
+    <meta name="twitter:card" content="https://samodraland.github.io" />
+
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <link rel="stylesheet" href="../css/style.min.css">
+    <link rel="stylesheet" href="../css/demo.min.css">
+
+</head>
+
+<body>
+    <dialog id="admin">
+        <p>User &amp; password: admin@desktopuser.com</p>
+        <p>The app on the left is the Admin dashboard — it looks best on a desktop web browser.</p>
+        <a href="javascript:;" onclick="closeDialog('admin')">Close</a>
+    </dialog>
+    <dialog id="agent">
+        <p>User &amp; password: demo@mobileuser.com</p>
+        <p>
+            The app on the right is a hybrid mobile app for user from society
+        </p>
+        <a href="javascript:;" onclick="closeDialog('agent')">Close</a>
+    </dialog>
+    <table width="100%" height="100%">
+        <tr>
+            <td height="30"><a href="javascript:;" onclick="openDialog('admin')">Click for login detail &amp;
+                    information</a></td>
+            <td height="30"><a href="javascript:;" onclick="openDialog('agent')">Click for login detail &amp;
+                    information</a></td>
+        </tr>
+        <tr>
+            <td width="73%">
+                <iframe src="https://demo.vandecode.com/social/desktop" frameborder="0" width="100%"
+                    height="100%"></iframe>
+            </td>
+            <td width="27%">
+                <div class="android-phone">
+                    <div class="android-speaker"></div>
+                    <div class="volume-buttons">
+                        <div class="volume-button"></div>
+                        <div class="volume-button"></div>
+                    </div>
+
+                    <div class="power-button"></div>
+                    <div class="android-screen">
+                        <div class="iframe-wrapper">
+                            <iframe id="phone" src="https://demo.vandecode.com/social/mobile" frameborder="0"
+                                width="100%" height="100%"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+            </td>
+        </tr>
+    </table>
+    <script>
+        function openDialog(dialog) {
+            document.querySelector(`#${dialog}`).showModal()
+        }
+        function closeDialog(dialog) {
+            document.querySelector(`#${dialog}`).close()
+        }
+    </script>
+</body>
+
+</html>
